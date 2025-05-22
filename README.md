@@ -134,7 +134,7 @@ requirements.txt     # Optional: for pip installs
 
 ---
 
-## 📈 Planned Improvements
+## 📈 Improvements
 
 Here are a few enhancements that can be done:
 
