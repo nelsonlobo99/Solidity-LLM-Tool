@@ -81,6 +81,26 @@ streamlit run app.py
 
 ---
 
+---
+
+🏗️ Build and Run Instructions
+
+# Build the Docker image
+docker build -t solidity-llm-tools .
+
+# Run the container with Etherscan API key and Ollama model available
+docker run -p 8501:8501 -e ETHERSCAN_API_KEY=your_etherscan_api_key \
+    -v ~/.ollama:/root/.ollama \
+    solidity-llm-tools
+
+✅ Note:
+
+This setup assumes Ollama has already pulled the gemma3:4b model locally on your host and is mounted into the container.
+
+For GPU acceleration, you’d modify the Docker base image and runtime setup.
+
+---
+
 ## 📁 File Structure
 
 ```
