@@ -86,12 +86,16 @@ streamlit run app.py
 🏗️ Build and Run Instructions
 
 # Build the Docker image
+```bash
 docker build -t solidity-llm-tools .
+```
 
 # Run the container with Etherscan API key and Ollama model available
+```bash
 docker run -p 8501:8501 -e ETHERSCAN_API_KEY=your_etherscan_api_key \
     -v ~/.ollama:/root/.ollama \
     solidity-llm-tools
+```
 
 ✅ Note:
 
